@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class=”content”> 
+            <label for=”first-name”>First Name</label> 
+            <input type=”text” id="firstname" /> 
+            <label for=”last-name”>Last Name</label> 
+            <input type=”text” id="last-name" /> 
+            <label for=”email”>Email</label>  
+            <input type=”text” id="email" /> 
+        </div>
+        <div id="main-content" class=”content”><p class="render"> First Name : Alex</p><p class="render" id="lastname">Last Name: Bank</p><p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+
+    <!-- chapter49to52 -->
+    <!-- task 1 -->
+
+    <!-- <div>
+        Name<input type="text" id='name'><br><br>
+        Password<input type="text" id='password'><br>
+        <button  onclick="signup()">Signup</button>
+    </div> -->
+
+    <!-- task2 -->
+
+    <!-- <p id="text" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, vitae exercitationem nam, suscipit nemo, iusto laborum nihil veniam quam minus ducimus fugiat at dignissimos eos iste architecto eum illum provident!</p> -->
+
+    <!-- <p id="para" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. <a href="javascript:void(0)" onclick="readMore()"> read more</a></p> -->
+
+
+    <!-- task3 -->
+
+
+    <!-- <div>
+        <table id="mytable"  >
+            <tr>
+                <th>
+                    index no
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    class
+                </th>
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    01
+                </td>
+                <td>
+                    jolli
+                </td>
+                <td>
+                    78
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+        <td><button type="button" class="btn btn-dark" value="Edit Row" onclick="editvalue(this)">Edit</button></td>
+            
+            </tr>
+            <tr  id="deleted"> 
+                <td>
+                    02
+                </td>
+                <td>
+                    noshaba
+                </td>
+                <td>
+                    79
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+        <td><button type="button" class="btn btn-dark" value="Edit Row" onclick="editvalue(this)">Edit</button></td>
+                
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    03
+                </td>
+                <td>
+                    shaheen
+                </td>
+                <td>
+                    70
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+        <td><button type="button" class="btn btn-dark" value="Edit Row" onclick="editvalue(this)">Edit</button></td>
+                
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    04
+                </td>
+                <td>
+                    ali
+                </td>
+                <td>
+                    67
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+        <td><button type="button" class="btn btn-dark" value="Edit Row" onclick="editvalue(this)">Edit</button></td>
+                
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    05
+                </td>
+                <td>
+                    Danish
+                </td>
+                <td>
+                    89
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+        <td><button type="button" class="btn btn-dark" value="Edit Row" onclick="editvalue(this)">Edit</button></td>
+
+            </tr>
+            <tr>
+                <td>
+                    06
+                </td>
+                <td>
+                    Maryam
+                </td>
+                <td>
+                    54
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+        <td><button type="button" class="btn btn-dark" value="Edit Row" onclick="editvalue(this)">Edit</button></td>
+
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    07
+                </td>
+                <td>
+                    Amber
+                </td>
+                <td>
+                    45
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+        <td><button type="button" class="btn btn-dark" value="Edit Row" onclick="editvalue(this)">Edit</button></td>
+                
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    08
+                </td>
+                <td>
+                    yazar
+                </td>
+                <td>
+                    90
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+        <td><button type="button" class="btn btn-dark" value="Edit Row" onclick="editvalue(this)">Edit</button></td>
+                
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    09
+                </td>
+                <td>
+                    waqar
+                </td>
+                <td>
+                    75
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+        <td><button type="button" class="btn btn-dark" value="Edit Row" onclick="editvalue(this)">Edit</button></td>
+
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    10
+                </td>
+                <td>
+                    Mahnoor
+                </td>
+                <td>
+                    90
+                </td>
+                
+        
+                <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+        <td><button type="button" class="btn btn-dark" value="Edit Row" onclick="editvalue(this)">Edit</button></td>
+
+                
+            </tr>
+        </table>
+    </div>  -->
+
+
+
+
+
+
+
+
+    <!-- chapter 43to48 -->
+
+    <!-- task 1 -->
+
+    <!-- <a href="#" onclick="showBox()" id="box"> click here</a> -->
+
+
+    <!-- task2 -->
+
+    <!-- <img src="images/mb1.jpg" onclick="showImage()" alt="">
+    <img src="images/mb2.jpg" onclick="showImage()" alt="">
+    <img src="images/mb3.jpg" onclick="showImage()" alt="">
+    <img src="images/mb4.png" onclick="showImage()" alt=""> -->
+
+
+
+    <!-- task3 -->
+
+    <!-- <div>
+        <table id="mytable"  >
+            <tr>
+                <th>
+                    index no
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    class
+                </th>
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    01
+                </td>
+                <td>
+                    jolli
+                </td>
+                <td>
+                    78
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+            
+            </tr>
+            <tr  id="deleted"> 
+                <td>
+                    02
+                </td>
+                <td>
+                    noshaba
+                </td>
+                <td>
+                    79
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+                
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    03
+                </td>
+                <td>
+                    shaheen
+                </td>
+                <td>
+                    70
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+                
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    04
+                </td>
+                <td>
+                    ali
+                </td>
+                <td>
+                    67
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+                
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    05
+                </td>
+                <td>
+                    Danish
+                </td>
+                <td>
+                    89
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+
+            </tr>
+            <tr>
+                <td>
+                    06
+                </td>
+                <td>
+                    Maryam
+                </td>
+                <td>
+                    54
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    07
+                </td>
+                <td>
+                    Amber
+                </td>
+                <td>
+                    45
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+                
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    08
+                </td>
+                <td>
+                    yazar
+                </td>
+                <td>
+                    90
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    09
+                </td>
+                <td>
+                    waqar
+                </td>
+                <td>
+                    75
+                </td>
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+
+            </tr>
+            <tr  id="deleted">
+                <td>
+                    10
+                </td>
+                <td>
+                    Mahnoor
+                </td>
+                <td>
+                    90
+                </td>
+                
+        <td><button type="button" class="btn btn-dark" value="Delete Row" onclick="deleteNumber(this)">Delete</button></td>
+                    
+                
+            </tr>
+        </table>
+    </div> -->
+
+    <!-- task4 -->
+    <!-- <img src="images/mb1.jpg" class='change' onmouseover="image1()" onmouseout="image2()" onclick="image1()" id="img1" alt=""> -->
+
+    <!-- <div>
+        <h1>
+            Counter
+        </h1>
+        <h1 id="counting">0</h1><br><br>
+        <button onclick="increasebtn()" >Increase counter</button>
+        <button onclick="decreasebtn()">Decrease counter</button>
+        
+
+
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- chapter 53 to 57 -->
+    <!-- task 1-->
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
